@@ -624,7 +624,7 @@
              canvas.width = window.innerWidth;
              canvas.height = window.innerHeight;
              
-             const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+             const chars = "01";
              const charArray = chars.split("");
              const fontSize = 16;
              const columns = canvas.width / fontSize;
@@ -634,7 +634,7 @@
                  ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'; // Background color with slight opacity
                  ctx.fillRect(0, 0, canvas.width, canvas.height);
              
-                 ctx.fillStyle = '#0f0'; // Text color
+                 ctx.fillStyle = '#fff'; // Text color
                  ctx.font = `${fontSize}px monospace`;
              
                  for (let i = 0; i < drops.length; i++) {
@@ -652,7 +652,7 @@
                  canvas.height = window.innerHeight;
              });
              
-             setInterval(draw, 30);
+             setInterval(draw, 50);
         </script>
 </body>
 
