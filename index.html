@@ -178,8 +178,8 @@
     }
 
     .certificate {
-        width: 100%; /* Adjust width of certificates */
-        margin-bottom: 10px; /* Reduced margin between certificates */
+        width: calc(50% - 10px); /* 50% width minus gap */
+        /* This will ensure at least two certificates per row with some gap */
     }
 
     .header-logo {
@@ -219,8 +219,8 @@
     }
 
     .certificate {
-        width: 100%; /* Certificates take full width on small screens */
-        margin-bottom: 10px; /* Reduced margin for better spacing */
+        width: calc(100% - 10px); /* Full width with gap */
+        /* This will ensure only one certificate per row on very small screens */
     }
 
     .section {
